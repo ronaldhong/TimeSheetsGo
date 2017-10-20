@@ -1,4 +1,4 @@
-You can visit this page @ https://ronaldhong.github.io/
+You can visit this page @ https://ronaldhong.github.io/TimeSheetsGo/
 <br/>
 Login&Contact pages are currently under construction.
 <br/>
