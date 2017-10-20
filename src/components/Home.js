@@ -13,16 +13,6 @@ import InViewMonitor from 'react-inview-monitor'
 const FontAwesome = require('react-fontawesome')
 
 
-
-const FadeInItem = ({fadeInClass = 'bounceInRight' }) =>
-  <InViewMonitor
-    classNameNotInView="vis-display"
-    classNameInView={`animated ${fadeInClass}`}
-    >
-    <img src={iphone_black} alt="iphone-black" height="290px" />
-  </InViewMonitor>
-
-
 class Home extends Component{
   render(){
     let divStyle ={
