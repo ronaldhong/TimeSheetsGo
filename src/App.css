@@ -583,5 +583,19 @@ hr { border: 0;
     font-size: .9em;
     text-align: center;
   }
+  .about_box{
+    flex-direction: column;
+    margin: 30px 15px;
+  }
+  .pricing_box{
+    flex-direction: column;
+    margin:20px 30px;
+  }
+  .pricing_box_small{
+    width:100%;
+  }
+  .pricing_questions{
+    flex-direction: column;
+  }
 
 }
