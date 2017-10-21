@@ -1,7 +1,7 @@
 /*BASELAYOUT*/
 .burger_icon{
   position: absolute;
-  left: 300px;
+  left: 10px;
   top:30%;
   display: none;
 
@@ -13,9 +13,9 @@
   top:0;
   z-index: 0 !important;
   background-color: white;
-  width:200px;
+  width:100%;
   justify-content: flex-start;
-  text-align: left;
+  text-align: center;
 
 }
 .burger_menu{
@@ -82,7 +82,12 @@
 #nav_burger{
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
-
+.buger_menu_style{
+  text-decoration: none;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  color: #808080;
+  margin-bottom: 20px;
+}
 #nav_bar{
   padding: 0 10px 12px 10px;
   text-decoration: none;
