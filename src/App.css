@@ -6,6 +6,9 @@
   display: none;
 
 }
+.narrowLinks{
+  display: none;
+}
 .burger_menu_box{
   position: absolute;
   padding-top: 20px;
@@ -175,14 +178,14 @@ input::placeholder {
   z-index: -999;
   animation-name: fadein;
   animation-duration: .9s;
-
+/*
 
   -webkit-animation-name: fadein;
   -moz-animation-name: fadein;
   -ms-animation-name: fadein;
   -webkit-animation-duration: .9s;
    -moz-animation-duration: .9s;
-    -ms-animation-duration: .9s;
+    -ms-animation-duration: .9s;*/
 }
 .Home_background_text{
   background-color: black;
@@ -197,20 +200,21 @@ input::placeholder {
 
 }
 .Home_background_text_top{
-  width:340px;
-  height:64px;
+  width:25%;
+  height:9%;
   top: 200px;
-  left:185px;
-  font-size: 2.1em;
+  left:13%;
+  font-size: 2.7vw;
   margin-right: 20px;
   animation-duration: 1s;
   animation-name: slide_top_in;
 }
 .Home_background_text_bottom{
-  width:180px;
+  width:13.5%;
   height:35px;
   top:280px;
-  left:344px;
+  left:24.5%;
+  font-size: 1.2vw;
   animation-duration: 1s;
   animation-name: slide_bot_in;
 }
@@ -220,7 +224,7 @@ input::placeholder {
 }
 .Home_background_img_s{
   position: absolute;
-  left: 557px;
+  left: 42%;
   top: 195px;
   z-index: 100;
   opacity: 0;
@@ -228,11 +232,13 @@ input::placeholder {
   animation-name: slide_left_s;
   animation-fill-mode: forwards;
   animation-delay: .7s;
+  height: 40%;
 }
 
 .Home_background_img_l{
+  height:45%;
   position: absolute;
-  left:685px;
+  left:50%;
   top:150px;
   opacity: 0;
   animation-duration: 1s;
@@ -384,7 +390,7 @@ li{
   100%{
     opacity: 1;
     height:230px;
-    width:250px;
+    width:100%;
 
   }
 }
@@ -397,6 +403,7 @@ li{
   margin: 10px 10px;
   width:250px;
   text-align: center;
+  height:100%;
 }
 .Gallery_images_div:hover{
   opacity: .4;
@@ -422,6 +429,7 @@ li{
 /********ABOUT****************/
 .about_box{
   display: flex;
+  flex-wrap: wrap;
   margin: 30px 100px;
 }
 .about_box div{
@@ -438,6 +446,7 @@ li{
   text-align: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 20px 120px 0px 120px;
 }
 .pricing_box_small{
@@ -481,7 +490,16 @@ hr { border: 0;
   font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 726px) and (max-device-width:1056px) {
+  .home_intro{
+    flex-direction: column;
+  }
+  .home_intro_function{
+    width:75%;
+  }
+}
+/*@media only screen and (max-device-width: 375px) {*/
+@media only screen and (max-device-width: 550px) {
   .burger_icon{
     display: inline;
   }
@@ -511,7 +529,8 @@ hr { border: 0;
     }
   }
   .Home_background_img{
-    height:270px;
+    height:280px;
+    width:550px;
   }
   .Home_background_text_top{
     width:105px;

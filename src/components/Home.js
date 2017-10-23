@@ -34,8 +34,8 @@ class Home extends Component{
           <div className="Home_background_text Home_background_text_bottom">
             <p>ON THE GO</p>
           </div>
-          <img src={iphone_black} alt="background-image" className="Home_background_img_s" height="290px;" />
-          <img src={Calendar_Ipad} alt="background-image_large" className="Home_background_img_l" height="320px;"/>
+          <img src={iphone_black} alt="background-image" className="Home_background_img_s" />
+          <img src={Calendar_Ipad} alt="background-image_large" className="Home_background_img_l" />
         </div>
         <div className="home_intro">
           <div className="home_intro_function">
