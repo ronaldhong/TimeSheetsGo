@@ -603,7 +603,6 @@ hr { border: 0;
     text-align: center;
   }
   .about_box{
-    flex-direction: column;
     margin: 30px 15px;
   }
   .pricing_box{

@@ -11,7 +11,6 @@ class About extends Component{
     }
     return(
       <div className="about_box">
-
         <div style={{'text-align':'right'}} className="about_div_box">
           <h2 style={h2_style}>ABOUT US</h2>
           <p style={{'color':'#919194','line-height':'200%'}}>
