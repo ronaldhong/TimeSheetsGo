@@ -220,7 +220,7 @@ input::placeholder {
 }
 .Home_background_text p{
   padding-right: 20px;
-  line-height:5px;
+  /*line-height:5px;*/
 }
 .Home_background_img_s{
   position: absolute;
