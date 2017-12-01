@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ronaldhong.github.io/TimeSheetsGo/",
+  "homepage": "https://ronaldhong.github.io/",
   "dependencies": {
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
