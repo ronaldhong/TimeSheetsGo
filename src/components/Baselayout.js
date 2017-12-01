@@ -40,21 +40,21 @@ class Baselayout extends Component{
           <div className={this.state.isTop ? 'nav_box_l':'nav_box_s'}>
             <NavLink style={{height:'100%'}} exact to="/"><img src={logo} alt="tsgo-logo" className="logo_img"/></NavLink>
             <nav style={{'text-align': 'right'}} id="nav" className={this.state.isTop ? 'nav_large':'nav_small'}>
-              <NavLink exact to ="/" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}}  id="nav_bar">Home</NavLink>
-              <NavLink to ="/gallery" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Gallery</NavLink>
-              <NavLink to ="/contact" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Contact</NavLink>
-              <NavLink to ="/about" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >About Us</NavLink>
-              <NavLink to ="/pricing" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Pricing</NavLink>
-              <NavLink to ="/login" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Login</NavLink>
+              <NavLink exact to ="/TimeSheetsGo/" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}}  id="nav_bar">Home</NavLink>
+              <NavLink to ="/TimeSheetsGo/gallery" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Gallery</NavLink>
+              <NavLink to ="/TimeSheetsGo/contact" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Contact</NavLink>
+              <NavLink to ="/TimeSheetsGo/about" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >About Us</NavLink>
+              <NavLink to ="/TimeSheetsGo/pricing" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Pricing</NavLink>
+              <NavLink to ="/TimeSheetsGo/login" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Login</NavLink>
             </nav>
             <div className="narrowLinks burger_menu_box">
               <nav id="nav_burger " className="burger_menu" >
-                <NavLink exact to ="/" activeStyle={{"color": "black"}}   className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="home" className='super-crazy-colors' name='home' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Home</NavLink>
-                <NavLink to ="/gallery" activeStyle={{"color": "black"}}  className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="image" className='super-crazy-colors' name='image' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Gallery</NavLink>
-                <NavLink to ="/contact" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="phone" className='super-crazy-colors' name='phone' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Contact</NavLink>
-                <NavLink to ="/about" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="info-circle" className='super-crazy-colors' name='info-circle' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> About Us</NavLink>
-                <NavLink to ="/pricing" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="tag" className='super-crazy-colors' name='tag' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Pricing</NavLink>
-                <NavLink to ="/login" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="sign-in" className='super-crazy-colors' name='sign-in' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Login</NavLink>
+                <NavLink exact to ="/TimeSheetsGo/" activeStyle={{"color": "black"}}   className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="home" className='super-crazy-colors' name='home' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Home</NavLink>
+                <NavLink to ="/TimeSheetsGo/gallery" activeStyle={{"color": "black"}}  className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="image" className='super-crazy-colors' name='image' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Gallery</NavLink>
+                <NavLink to ="/TimeSheetsGo/contact" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="phone" className='super-crazy-colors' name='phone' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Contact</NavLink>
+                <NavLink to ="/TimeSheetsGo/about" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="info-circle" className='super-crazy-colors' name='info-circle' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> About Us</NavLink>
+                <NavLink to ="/TimeSheetsGo/pricing" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="tag" className='super-crazy-colors' name='tag' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Pricing</NavLink>
+                <NavLink to ="/TimeSheetsGo/login" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="sign-in" className='super-crazy-colors' name='sign-in' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Login</NavLink>
                 <button onClick={this.burgerToggle}>
                   <FontAwesome id="chevron-up" className='super-crazy-colors' name='chevron-up' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>
                 </button>
