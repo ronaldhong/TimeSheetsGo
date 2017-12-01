@@ -15,7 +15,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Baselayout>
       <Switch>
-        <Route exact path="/TimeSheetsGo" component={Home}/>
+        <Route exact path="/TimeSheetsGo/" component={Home}/>
         <Route exact path ="/TimeSheetsGo/contact" component={Contact}/>
         <Route exact path ="/TimeSheetsGo/gallery" component={Gallery}/>
         <Route exact path ="/TimeSheetsGo/about" component={About}/>
