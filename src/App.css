@@ -430,16 +430,33 @@ li{
 .about_box{
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 100px;
+  margin: 50px 100px;
+}
+.about_fa{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .about_box div{
   padding: 20px 20px 0 30px;
   flex: 1 1 40%;
-
+}
+.about_div_box{
+  min-width: 200px;
 }
 .about_div_box p{
   font-size: .8em;
   font-family:'Geneva, Tahoma, Verdana, sans-serif';
+}
+.about_div_box p{
+  width:100%;
+}
+.about_flex{
+  display: flex;
+}
+.about_flex div{
+  padding: 0;
+  padding-left: 30px;
 }
 /*****PRICING********/
 .pricing_box{
@@ -499,7 +516,7 @@ hr { border: 0;
   }
 }
 /*@media only screen and (max-device-width: 375px) {*/
-@media only screen and (max-device-width: 550px) {
+@media only screen and (max-device-width: 700px) {
   .burger_icon{
     display: inline;
   }
@@ -604,6 +621,9 @@ hr { border: 0;
   }
   .about_box{
     margin: 30px 15px;
+  }
+  .about_div_box{
+    padding-left:0;
   }
   .pricing_box{
     flex-direction: column;
