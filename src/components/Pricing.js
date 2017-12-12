@@ -19,7 +19,7 @@ class Pricing extends Component{
               <div style={{'background-color':'#FFFFFF', color:'#9196BC'}}><small>No base fee</small></div>
               <div className="pricing_link_box">
                 <div style={{width:"150px",margin:'auto', 'border-radius':'5px', 'background-color':'#EFBB20',border:'1px solid #EFBB20'}}>
-                  <NavLink style={{color:'white'}} className="pricing_link" to ="/contact">
+                  <NavLink style={{color:'white'}} className="pricing_link" to ="/TimeSheetsGo/contact">
                   <FontAwesome id="heart" className='super-crazy-colors' name='heart' size='1x'
                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)', color:'white'}}/>
                     <small> Try for Free</small>
@@ -34,7 +34,7 @@ class Pricing extends Component{
               <div style={{'background-color':'#FFFFFF',color:'#9196BC'}}><small>No base fee</small></div>
               <div className="pricing_link_box">
                 <div style={{width:"150px",margin:'auto', 'border-radius':'5px', 'background-color':'#EFBB20', border:'1px solid #EFBB20'}}>
-                  <NavLink style={{color:'white'}} className="pricing_link" to ="/contact">
+                  <NavLink style={{color:'white'}} className="pricing_link" to ="/TimeSheetsGo/contact">
                   <FontAwesome id="thumbs-o-up" className='super-crazy-colors' name='thumbs-o-up' size='1x'
                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)', color:'white'}}/>
                     <small> Try for Free</small>
