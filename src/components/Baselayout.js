@@ -80,7 +80,7 @@ class Baselayout extends Component{
             <div>
               <h5>SEARCH</h5>
               <input type="text" name="search" placeholder="Search.." />
-              <button type="submit"><FontAwesome id="search" className='super-crazy-colors search_bt' name='search' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/></button>
+              <button type="submit" className="search_bt"><FontAwesome id="search" className='super-crazy-colors search_bt' name='search' size='1x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)', color:'black' }}/></button>
             </div>
           </footer>
           <div className="copyright_div">

@@ -58,9 +58,6 @@ class Gallery extends Component{
             <img src={imageFour} className="Gallery_image Gallery_image_five" alt=""    onClick={() => this.setState({ isOpen: true, photoIndex:3 })} />
           </div>
           <div className="Gallery_images_div">
-            <img src={imageSix} className="Gallery_image Gallery_image_seven" alt=""     onClick={() => this.setState({ isOpen: true, photoIndex:5 })} />
-          </div>
-          <div className="Gallery_images_div">
             <img src={imageSeven} className="Gallery_image Gallery_image_eight" alt=""    onClick={() => this.setState({ isOpen: true, photoIndex:6 })} />
           </div>
           <div className="Gallery_images_div">

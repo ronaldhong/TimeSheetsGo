@@ -115,7 +115,7 @@ class Home extends Component{
             <br/><br/><br/><br/><br/><br/>
             <h2 className="home_contact_msg">START YOUR FREE TRIAL TODAY</h2>
             <div>
-              <NavLink to ="/contact" style={div_contact_box} ><p className="home_contact_msg home_contact_box">Contact us</p></NavLink>
+              <NavLink to ="/TimeSheetsGo/contact" style={div_contact_box} ><p className="home_contact_msg home_contact_box">Contact us</p></NavLink>
             </div>
             <br/><br/><br/><br/><br/><br/>
           </Parallax>
