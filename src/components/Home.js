@@ -19,10 +19,11 @@ class Home extends Component{
       color:"#EFBB20"
     };
     let div_color_grey={
-      color:"#9D9D9D"
+      color:"#9D9D9D",
+      'fontSize':'.8em'
     }
     let div_contact_box={
-      "text-decoration":"none"
+      "textDecoration":"none"
     }
     return(
       <div>
@@ -39,28 +40,28 @@ class Home extends Component{
         </div>
         <div className="home_intro">
           <div className="home_intro_function">
-            <h4><FontAwesome id="clock-icon" className='super-crazy-colors' name='clock-o' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  FUNCTIONS</h4>
+            <h4><FontAwesome id="clock-icon" className='super-crazy-colors' name='clock-o' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  FUNCTIONS</h4>
             <p><span style={divStyle}>Simple</span>. The employee submits their timesheet through our website. The designated approver will be able to approve or decline the submitted timesheet.
               All time recordings can then be <span style={divStyle}>exported</span> to your accounting software. (Required export format can be arranged with us to meet any requirements).</p>
           </div>
           <div className="home_intro_function">
-            <h4><FontAwesome id="mobile" className='super-crazy-colors' name='mobile' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>   RESPONSIVE DESIGN</h4>
+            <h4><FontAwesome id="mobile" className='super-crazy-colors' name='mobile' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>   RESPONSIVE DESIGN</h4>
             <p>With our adaptable design, employees can clock in and clock out using almost <span style={divStyle}>any device</span>.  This makes time tracking and timesheet a simple process.</p>
           </div>
           <div className="home_intro_function">
-            <h4><FontAwesome id="lightbulb-o" className='super-crazy-colors' name='lightbulb-o' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  ANALYSING TOOLS</h4>
+            <h4><FontAwesome id="lightbulb-o" className='super-crazy-colors' name='lightbulb-o' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  ANALYSING TOOLS</h4>
             <p>Seamlessly view your company’s time records. <span style={divStyle}>Make critical business decisions</span> based on key metrics and compare them against historical data.</p>
           </div>
           <div className="home_intro_function">
-            <h4><FontAwesome id="map-signs" className='super-crazy-colors' name='map-signs' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  PINPOINT YOUR TIME COSTS</h4>
+            <h4><FontAwesome id="map-signs" className='super-crazy-colors' name='map-signs' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  PINPOINT YOUR TIME COSTS</h4>
             <p>Keep track of your labour costs, job costs and equipment costs easily with our <span style={divStyle}>multi-layered</span> time in-attendance system.</p>
           </div>
           <div className="home_intro_function">
-            <h4><FontAwesome id="users" className='super-crazy-colors' name='users' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  USER MANAGEMENT</h4>
+            <h4><FontAwesome id="users" className='super-crazy-colors' name='users' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>  USER MANAGEMENT</h4>
             <p>We empower you with the tools to manage your company’s user accounts (from de-activation to user statistics).</p>
           </div>
           <div className="home_intro_function">
-            <h4><FontAwesome id="lightbulb-o" className='super-crazy-colors' name='lightbulb-o' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>   CONTINUOUS SUPPORT</h4>
+            <h4><FontAwesome id="lightbulb-o" className='super-crazy-colors' name='lightbulb-o' size='1.5x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>   CONTINUOUS SUPPORT</h4>
             <p>TimesheetsGO is designed to help your company <span style={divStyle}>save costs</span> by providing a <span style={divStyle}>great product</span> and more importantly, <span style={divStyle}>excellent service</span>. Feel free to contact us for any enquiries or a product demo and trial6</p>
           </div>
         </div>
@@ -84,7 +85,7 @@ class Home extends Component{
           </div>
         </div>
 
-        <div class="home_detail_box_r">
+        <div className="home_detail_box_r">
           <div className="home_detail_box_white" >
             <h4><FontAwesome id="star" className='super-crazy-colors' name='star' size='1.8x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>   MANAGE TIMESHEETS HAVE NEVER BEEN EASIER</h4>
             <div className="home_detail_box_content">

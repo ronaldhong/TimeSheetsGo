@@ -4,13 +4,24 @@ class Contact extends Component{
   constructor(props){
     super(props)
       this.state = {
-        name: '',
+        Name: '',
         email:"",
         phone:"",
         subject:"",
         message:"",
       };
+      this.handleInputChange = this.handleInputChange.bind(this);
+
   }
+  handleInputChange(event) {
+      const target = event.target;
+      const value = target.value;
+      const name = target.name;
+
+      this.setState({
+        name: value
+      });
+    }
 
   render(){
     let p_color ={
@@ -26,23 +37,23 @@ class Contact extends Component{
           <form className="contact_box_form">
             <label>Name * </label>
             <br/>
-            <input type="text" value={this.state.name} />
+            <input type="text"   onChange={this.handleInputChange} ref="name"/>
             <br/>
             <label>E-Mail * </label>
             <br/>
-            <input type="text" value={this.state.email} />
+            <input type="text"    onChange={this.handleInputChange} ref="email"/>
             <br/>
             <label>Phone * </label>
             <br/>
-            <input type="text" value={this.state.phone} />
+            <input type="text"     onChange={this.handleInputChange} ref="phone"/>
             <br/>
             <label>Subject * </label>
             <br/>
-            <input type="text" value={this.state.subject} />
+            <input type="text"     onChange={this.handleInputChange} ref="subject" />
             <br/>
             <label>Message * </label>
             <br/>
-            <textarea type="text" value={this.state.message} />
+            <textarea type="text"     onChange={this.handleInputChange} ref="message"/>
             <br/>
             <input type="submit" value= "submit"/>
           </form>
