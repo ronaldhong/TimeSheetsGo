@@ -31,7 +31,7 @@ class Baselayout extends Component{
 
     return(
       <div>
-        <div className='nav_bar_large' style={{ position: 'fixed',top:0, width:'100%', "background-color":'white'  }}>
+        <div className='nav_bar_large' style={{ position: 'fixed',top:0, width:'100%', "backgroundColor":'white'  }}>
           <div className="burger_icon">
             <button onClick={this.burgerToggle}>
               <FontAwesome id="bars" className='super-crazy-colors' name='bars' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/>
@@ -39,16 +39,16 @@ class Baselayout extends Component{
           </div>
           <div className={this.state.isTop ? 'nav_box_l':'nav_box_s'}>
             <NavLink style={{height:'100%'}} exact to="/"><img src={logo} alt="tsgo-logo" className="logo_img"/></NavLink>
-            <nav style={{'text-align': 'right'}} id="nav" className={this.state.isTop ? 'nav_large':'nav_small'}>
-              <NavLink exact to ="/TimeSheetsGo/" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}}  id="nav_bar">Home</NavLink>
-              <NavLink to ="/TimeSheetsGo/gallery" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Gallery</NavLink>
-              <NavLink to ="/TimeSheetsGo/contact" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Contact</NavLink>
-              <NavLink to ="/TimeSheetsGo/about" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >About Us</NavLink>
-              <NavLink to ="/TimeSheetsGo/pricing" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Pricing</NavLink>
-              <NavLink to ="/TimeSheetsGo/login" activeStyle={{"color": "black", "border-bottom":"2px solid orange"}} id="nav_bar" >Login</NavLink>
+            <nav style={{'textAlign': 'right'}} id="nav" className={this.state.isTop ? 'nav_large':'nav_small'}>
+              <NavLink exact to ="/TimeSheetsGo/" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}}  id="nav_bar">Home</NavLink>
+              <NavLink to ="/TimeSheetsGo/gallery" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}} id="nav_bar" >Gallery</NavLink>
+              <NavLink to ="/TimeSheetsGo/contact" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}} id="nav_bar" >Contact</NavLink>
+              <NavLink to ="/TimeSheetsGo/about" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}} id="nav_bar" >About Us</NavLink>
+              <NavLink to ="/TimeSheetsGo/pricing" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}} id="nav_bar" >Pricing</NavLink>
+              <NavLink to ="/TimeSheetsGo/login" activeStyle={{"color": "black", "borderBottom":"2px solid orange"}} id="nav_bar" >Login</NavLink>
             </nav>
             <div className="narrowLinks burger_menu_box">
-              <nav id="nav_burger " className="burger_menu" >
+              <nav id="nav_burger " className="burger_menu">
                 <NavLink exact to ="/TimeSheetsGo/" activeStyle={{"color": "black"}}   className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="home" className='super-crazy-colors' name='home' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Home</NavLink>
                 <NavLink to ="/TimeSheetsGo/gallery" activeStyle={{"color": "black"}}  className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="image" className='super-crazy-colors' name='image' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Gallery</NavLink>
                 <NavLink to ="/TimeSheetsGo/contact" activeStyle={{"color": "black"}} className="buger_menu_style" onClick={this.burgerToggle}><FontAwesome id="phone" className='super-crazy-colors' name='phone' size='2x' style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}/> Contact</NavLink>
@@ -62,7 +62,7 @@ class Baselayout extends Component{
             </div>
           </div>
         </div>
-        <div style={{"margin-top": "80px","z-index":0}}>
+        <div style={{"marginTop": "80px","zIndex":0}}>
           {this.props.children}
         </div>
         <div>

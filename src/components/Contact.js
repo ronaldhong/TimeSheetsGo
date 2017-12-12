@@ -1,4 +1,28 @@
 import React, { Component } from 'react';
+import { BeatLoader } from 'react-spinners';
+import validator from 'validator';
+
+// const required = (value) => {
+//   if (!value.toString().trim().length) {
+//     // We can return string or jsx as the 'error' prop for the validated Component
+//     return 'require';
+//   }
+// };
+//
+// const email = (value) => {
+//   if (!validator.isEmail(value)) {
+//     return `${value} is not a valid email.`
+//   }
+// };
+//
+// const lt = (value, props) => {
+//   // get the maxLength from component's props
+//   if (!value.toString().trim().length > props.maxLength) {
+//     // Return jsx
+//     return <span className="error">The value exceeded {props.maxLength} symbols.</span>
+//   }
+// };
+
 
 class Contact extends Component{
   constructor(props){
@@ -9,20 +33,29 @@ class Contact extends Component{
         phone:"",
         subject:"",
         message:"",
+        loading: false
       };
       this.handleInputChange = this.handleInputChange.bind(this);
-
+      this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInputChange(event) {
       const target = event.target;
       const value = target.value;
       const name = target.name;
-
       this.setState({
         name: value
       });
     }
-
+  handleSubmit(event){
+    event.preventDefault()
+    this.setState({
+      loading: true
+    })
+    setTimeout(function(){
+      this.setState({loading:false});
+      alert("Thank you so much for your interest in TimeSheetsGo! We've received your submission and hope to get back to you soon. Our response times average about 1 week, as we make an effort to provide personalized feedback on each manuscript we receive.")
+    }.bind(this), 2000);
+  }
   render(){
     let p_color ={
       color: "#EFBB4B"
@@ -41,7 +74,7 @@ class Contact extends Component{
             <br/>
             <label>E-Mail * </label>
             <br/>
-            <input type="text"    onChange={this.handleInputChange} ref="email"/>
+            <input type="text" name="email"  onChange={this.handleInputChange} ref="email" />
             <br/>
             <label>Phone * </label>
             <br/>
@@ -55,7 +88,13 @@ class Contact extends Component{
             <br/>
             <textarea type="text"     onChange={this.handleInputChange} ref="message"/>
             <br/>
-            <input type="submit" value= "submit"/>
+            <input type="submit" value= "submit" onClick={this.handleSubmit} />
+            <div className="contact_loader">
+              <BeatLoader
+                color={'#123abc'}
+                loading={this.state.loading}
+              />
+            </div>
           </form>
 
         </div>

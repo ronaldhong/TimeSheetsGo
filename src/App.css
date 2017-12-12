@@ -446,6 +446,12 @@ li{
   font-size: 1.3em;
   background-color: #F6BE00;
 }
+.contact_loader{
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  top:50%;
+}
 /********ABOUT****************/
 .about_box{
   display: flex;
