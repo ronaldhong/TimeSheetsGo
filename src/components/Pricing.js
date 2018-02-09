@@ -75,7 +75,7 @@ class Pricing extends Component{
               </div>
               <div className="pricing_questions_list">
                 <h4>How will I be billed?</h4>
-                <p><small>You will be billed monthly based on the amount of active users you have for that month. For example, if you have 20 employees using TimesheetsGO, you will pay 20 * $5 = $100 (AUD) for that month. Please see FAQ: How does the free trial work for more detail about active users</small></p>
+                <p><small>You will be billed monthly based on the amount of active users you have for that month. For example, if you have 20 employees using TimesheetsGO, you will pay 20 * $5 = $100 (USD) for that month. Please see FAQ: How does the free trial work for more detail about active users</small></p>
               </div>
             </div>
           </div>
